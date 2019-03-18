@@ -1,0 +1,27 @@
+Group: 3 ID: 22
+        RefCnt: 6
+        Valid: 1, Installed 2
+        nexthop dummy2
+
+Group: 2 ID: 11
+        RefCnt: 4
+        Valid: 1, Installed 2
+        nexthop dummy1
+
+Group: 5 ID: 11111
+        RefCnt: 1
+        Valid: 1, Installed 2
+        nexthop
+
+Group: 4 ID: 1001
+        RefCnt: 0
+        Valid: 1, Installed 2
+        Depends: (1) (11)
+        nexthop 1.0.0.1 dummy1
+        nexthop dummy1
+
+Group: 1 ID: 1
+        RefCnt: 1
+        Valid: 1, Installed 2
+        nexthop 1.0.0.1 dummy1
+
