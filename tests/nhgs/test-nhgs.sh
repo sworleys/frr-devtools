@@ -2,6 +2,8 @@
 
 pkill zebra
 
+ip next flush
+
 ip link add dummy1 type dummy
 ip link add dummy2 type dummy
 
@@ -17,6 +19,8 @@ ip next add id 11 dev dummy1
 ip next add id 22 dev dummy2
 ip next add id 11111 blackhole
 ip next add id 1001 group 1/11
+
+ip -6 next add id 226 dev dummy2
 
 ip ro add 9.9.9.0/24 nhid 11111
 ip ro add 1.1.1.0/24 nhid 1
