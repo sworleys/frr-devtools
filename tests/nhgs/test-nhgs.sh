@@ -24,6 +24,7 @@ ip -6 next add id 226 dev dummy2
 
 ip ro add 9.9.9.0/24 nhid 11111
 ip ro add 1.1.1.0/24 nhid 1
+ip ro add 2.2.2.0/24 nhid 1001
 
 /usr/lib/frr/zebra --log stdout --log-level debug &> zebra_output.log &
 
