@@ -9,7 +9,7 @@ Group: 8 ID: 11113
         nexthop dummy1
 
 Group: 5 ID: 1001
-        RefCnt: 0
+        RefCnt: 1
         Valid: 1, Installed 2
         Depends: (1) (11)
         nexthop 1.0.0.1 dummy1
