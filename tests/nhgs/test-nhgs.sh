@@ -42,3 +42,5 @@ echo "Starting pytest..."
 pytest
 
 pkill zebra
+
+ip next flush
