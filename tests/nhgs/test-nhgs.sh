@@ -7,6 +7,7 @@ ip next flush
 ip link add dummy1 type dummy
 ip link add dummy2 type dummy
 
+ip link set lo up
 ip link set dummy1 up
 ip link set dummy2 up
 
