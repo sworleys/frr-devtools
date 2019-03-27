@@ -1,11 +1,30 @@
-Group: 3 ID: 22
+Group: 2 ID: 11
         RefCnt: 2
+        Valid: 1, Installed 2
+        nexthop dummy1
+
+Group: 8 ID: 2002
+        RefCnt: 1
+        Valid: 1, Installed 2
+        Depends: (116) (226)
+        nexthop 2001:: dummy2
+        nexthop dummy2
+
+Group: 5 ID: 226
+        RefCnt: 4
         Valid: 1, Installed 2
         nexthop dummy2
 
 Group: 11 ID: 11113
         RefCnt: 2
         Valid: 0, Installed 0
+        nexthop dummy3
+
+Group: 6 ID: 1001
+        RefCnt: 1
+        Valid: 1, Installed 2
+        Depends: (1) (11)
+        nexthop 1.0.0.1 dummy1
         nexthop dummy1
 
 Group: 7 ID: 2001
@@ -15,52 +34,27 @@ Group: 7 ID: 2001
         nexthop 1.0.0.1 dummy1
         nexthop dummy2
 
-Group: 6 ID: 1001
+Group: 9 ID: 11111
         RefCnt: 1
         Valid: 1, Installed 2
-        Depends: (1) (11)
-        nexthop 1.0.0.1 dummy1
-        nexthop dummy1
-
-Group: 12 ID: 11114
-        RefCnt: 2
-        Valid: 0, Installed 0
-        nexthop dummy3
-
-Group: 10 ID: 11112
-        RefCnt: 2
-        Valid: 0, Installed 0
-        nexthop dummy3
-
-Group: 1 ID: 1
-        RefCnt: 1
-        Valid: 1, Installed 2
-        nexthop 1.0.0.1 dummy1
+        nexthop 
 
 Group: 4 ID: 116
         RefCnt: 0
         Valid: 1, Installed 2
         nexthop 2001:: dummy2
 
-Group: 9 ID: 11111
+Group: 1 ID: 1
         RefCnt: 1
         Valid: 1, Installed 2
-        nexthop 
+        nexthop 1.0.0.1 dummy1
 
-Group: 8 ID: 2002
-        RefCnt: 1
-        Valid: 1, Installed 2
-        Depends: (116) (226)
-        nexthop 2001:: dummy2
-        nexthop dummy2
-
-Group: 2 ID: 11
+Group: 10 ID: 11112
         RefCnt: 2
-        Valid: 1, Installed 2
+        Valid: 0, Installed 0
         nexthop dummy1
 
-Group: 5 ID: 226
-        RefCnt: 4
+Group: 3 ID: 22
+        RefCnt: 2
         Valid: 1, Installed 2
         nexthop dummy2
-

@@ -6,10 +6,12 @@ ip next flush
 
 ip link add dummy1 type dummy
 ip link add dummy2 type dummy
+ip link add dummy3 type dummy
 
 ip link set lo up
 ip link set dummy1 up
 ip link set dummy2 up
+ip link set dummy3 up
 
 ip addr add 1.0.0.1 dev dummy1
 ip addr add 2.0.0.1 dev dummy2
